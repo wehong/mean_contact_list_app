@@ -9,30 +9,42 @@ AngularJS is the frontend for our app. It is the interface the users see.
 
 Node.js is for backend. It is the server at which out app runs. 
 
-1. Download and install node.js
+1. Download and install Node.js
 
-2. Create mean_contact_list_app
+2. Create folder mean_contact_list_app
 
-3. Add /server.js
+3. In mean_contact_list_app folder, create server.js file
 
-4. Download express
+4. Open server.js
 
-% cd mean_contact_list_app
+5. Open command prompt
 
-% npm install express
+6. cd project folder
 
-5. Set up server.js
+7. npm install express
 
-6. Test server.js
+8. In server.js, require express module
 
-% node server
+9. Test and make sure server is running correctly
 
-7. Set up and test use public/index.html
+10. Set up html template
 
-8. Import angularjs and test
+11. Create folder public in app folder
 
-9. Set up bootstrap and test
+12. Create index.html in public folder
 
-10. Add more contents to html
+13. Write basic content in html file
 
-11. Add controller
+14. Set up AngularJS in html file
+
+15. Test AngularJS
+
+16. Set up bootstrap
+
+17. Test bootstrap
+
+18. Create general layout for our app in html file
+
+19. Create controller
+
+20. Connect controller with index.html
