@@ -55,3 +55,9 @@ Node.js is for backend. It is the server at which out app runs.
 
 23. Transition to get data from server instead of controller
 
+24. Download and install MongoDB, which is a NoSql Database, 
+which means instead of storing data in structure tables, it stores data in JSON like documents, which makes it faster.
+
+25. Create C:/data/db and run MongoDB
+
+26. Create initial data in MongoDB, see MongoDB script
