@@ -2,5 +2,8 @@ var ContactListApp = angular.module("ContactListApp", []);
 
 ContactListApp.controller('ContactListCtrl', ['$scope', '$http', 
   function ($scope, $http) {
-    console.log("Hello from ContactListCtrl");
+    $http.get('/contactList').success(function(response) {
+      console.log("Data Received");
+      $scope.contactList = response;
+    })
   }]);

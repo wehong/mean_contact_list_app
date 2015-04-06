@@ -48,3 +48,10 @@ Node.js is for backend. It is the server at which out app runs.
 19. Create controller
 
 20. Connect controller with index.html
+
+21. Create dummy data
+
+22. Put dummy data into data
+
+23. Transition to get data from server instead of controller
+
