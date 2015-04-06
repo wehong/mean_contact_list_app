@@ -16,10 +16,14 @@ ContactListApp.controller('ContactListCtrl', ['$scope', '$http',
 
     $scope.addContact = function() {
       console.log($scope.contact);
-      $http.post('/contactList', $scope.contact).success(function(response) {
-        console.log(response);
-        refresh();
-      });
+      if ($scope.contact == "") {
+        alert("Please input a name!");
+      } else {
+        $http.post('/contactList', $scope.contact).success(function(response) {
+          console.log(response);
+          refresh();
+        });
+      }
     }
 
     $scope.removeContact = function(id) {
@@ -38,11 +42,15 @@ ContactListApp.controller('ContactListCtrl', ['$scope', '$http',
     }
 
     $scope.updateContact = function() {
-      console.log($scope.contact._id);
-      $http.put('/contactList/' + $scope.contact._id, $scope.contact).success(function(response) {
-        refresh();
-      })            
-      $scope.isAdded = true;
+      console.log($scope.contact.name);
+      if ($scope.contact.name == "") {
+        alert("Please input a name!");
+      } else {
+        $http.put('/contactList/' + $scope.contact._id, $scope.contact).success(function(response) {
+          refresh();
+        })            
+        $scope.isAdded = true;
+      }
     }
 
     $scope.deselect = function() {      
