@@ -61,3 +61,21 @@ which means instead of storing data in structure tables, it stores data in JSON 
 25. Create C:/data/db and run MongoDB
 
 26. Create initial data in MongoDB, see MongoDB script
+
+27. npm to install mongo js
+
+28. Require mongojs in server.js
+
+29. GET data from MongoDB use GET request
+
+30. Prepare our index.html layout to POST
+
+31. Define and test addContact()
+
+32. Send the input data to the server and make sure it receives correctly
+
+33. Insert the input data into MongoDB
+
+34. Test to make sure controller receive new data from DB
+
+35. Automatically refresh to perform a new GET request
