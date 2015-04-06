@@ -74,8 +74,24 @@ which means instead of storing data in structure tables, it stores data in JSON 
 
 32. Send the input data to the server and make sure it receives correctly
 
-33. Insert the input data into MongoDB
+33. Insert the input data into MongoDB, test to make sure controller receive new data from DB
 
-34. Test to make sure controller receive new data from DB
+34. Automatically refresh to perform a new GET request
 
-35. Automatically refresh to perform a new GET request
+35. Add REMOVE button
+
+36. Define adn test removeContact()
+
+37. Send DELETE request to server
+
+38. Delete the contact from MongoDB
+
+39. PUT to modify data
+
+40. Define editContact()
+
+41. Define updateContact()
+
+42. Write PUT request to send data to server
+
+43. Fix up by add CLEAR button
