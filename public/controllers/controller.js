@@ -2,6 +2,8 @@ var ContactListApp = angular.module("ContactListApp", []);
 
 ContactListApp.controller('ContactListCtrl', ['$scope', '$http', 
   function ($scope, $http) {
+    $scope.isAdded= true;
+
     var refresh = function() {
       $http.get('/contactList').success(function(response) {
         console.log("Data Received");
@@ -29,6 +31,7 @@ ContactListApp.controller('ContactListCtrl', ['$scope', '$http',
 
     $scope.editContact = function(id) {
       console.log(id);
+      $scope.isAdded = false;
       $http.get('/contactList/' + id).success(function(response) {
         $scope.contact = response;
       })
@@ -38,10 +41,12 @@ ContactListApp.controller('ContactListCtrl', ['$scope', '$http',
       console.log($scope.contact._id);
       $http.put('/contactList/' + $scope.contact._id, $scope.contact).success(function(response) {
         refresh();
-      })
+      })            
+      $scope.isAdded = true;
     }
 
     $scope.deselect = function() {      
-      $scope.contact = "";
+      $scope.contact = "";      
+      $scope.isAdded = true;
     }
   }]);
