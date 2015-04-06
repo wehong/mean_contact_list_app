@@ -1,3 +1,12 @@
+
+HWT@HWT-PC ~
+$ cd c:
+HWT@HWT-PC /c
+$ cd mongo/bin/
+HWT@HWT-PC /c/mongo/bin
+$ mongod
+
+//Open another terminal
 HWT@HWT-PC ~
 $ cd c:
 HWT@HWT-PC /c
